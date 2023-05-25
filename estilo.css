@@ -1,0 +1,112 @@
+* {
+    color: rgb(189, 184, 184);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+body {
+    background-image: url(img/background.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* camada black */
+.body-layer {
+    background-color: rgba(0, 0, 0, 0.678);
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 100vh;
+}
+
+/* final da camada black */
+
+.container {
+
+    border: 1px solid rgba(0, 128, 0, 0);
+    box-shadow: 10px 10px 98px 0px rgba(255, 255, 255, 0.363);
+    border-radius: 6px
+}
+
+@media screen and (max-width:534px) {
+    .container {min-height: 100vh;
+    margin-bottom: 0;}
+    .container p, a {font-size: .75rem;}
+    
+}
+
+body>div>div {
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+section {
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section a {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+
+section h1 {
+    color: aliceblue;
+}
+
+.button-form {
+    background-color: rgba(66, 66, 66, 0.562);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.entry-button {
+    background-color: red;
+    padding: 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid purple; */
+    align-items: center;
+
+}
+
+body>div>div>section>div>div.remember-me>p {
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    margin: 0px 0px 0px 10px;
+}
+
+.remember-me {
+    /* border: 1px solid yellow; */
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.warning p {
+    font-size: small;
+}
