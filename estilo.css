@@ -39,10 +39,16 @@ body {
 }
 
 @media screen and (max-width:534px) {
-    .container {min-height: 100vh;
-    margin-bottom: 0;}
-    .container p, a {font-size: .75rem;}
-    
+    .container {
+        min-height: 100vh;
+        margin-bottom: 0;
+    }
+
+    .container p,
+    a {
+        font-size: .75rem;
+    }
+
 }
 
 body>div>div {
@@ -81,6 +87,24 @@ section h1 {
     border: none;
     border-radius: 4px;
 }
+
+.entry-button {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.025);
+    }
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.025);
+    }
+}
+
 
 .options {
     display: flex;
